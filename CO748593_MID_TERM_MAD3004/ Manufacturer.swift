@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+
+class Manufacturer
+{
+    var Mid : Int
+    var Mname : String
+    
+    init()
+    {
+        self.Mid = 0
+        self.Mname = String()
+    }
+    
+    func dislay()
+    {
+        
+    }
+}

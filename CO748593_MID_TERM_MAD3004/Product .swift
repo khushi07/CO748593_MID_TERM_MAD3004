@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class Product: Manufacturer
+{
+    var Pid : Int
+    var Pname : String
+    var price : Float
+    var quantity : Int
+    
+   override init()
+    {
+        self.Pid = 0
+        self.Pname = String()
+        self.price = 0.0
+        self.quantity = 0
+    }
+}

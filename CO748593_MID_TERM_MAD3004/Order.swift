@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class Order
+{
+    var OrderId = Int()
+    var OrderDate = Date()
+    var ProductArray = Array<Int>()
+    var OrderTotal = Float()
+    
+     init()
+    {
+       self.OrderId = 0
+       self.OrderDate = Date()
+        self.ProductArray = 0
+        self.OrderTotal = 0.0
+    }
+}
