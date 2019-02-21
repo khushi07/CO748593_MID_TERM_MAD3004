@@ -12,7 +12,7 @@ class Order
 {
     var OrderId = Int()
     var OrderDate = Date()
-    let ProductArray = Array<String>()
+    var ProductArray = Array<String>()
     var OrderTotal = Float()
     
      init()
