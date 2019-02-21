@@ -12,7 +12,7 @@ class Order
 {
     var OrderId = Int()
     var OrderDate = Date()
-    var ProductArray = Array<String>()
+    let ProductArray = Array<String>()
     var OrderTotal = Float()
     
      init()
@@ -22,6 +22,7 @@ class Order
         self.ProductArray = ["Hard Drive","Zip Drive","Floppy Disk","Monitor","iPhone 7 Plus"]
         self.OrderTotal = 0.0
     }
+    
     
     
     func getOrderById()
@@ -39,8 +40,6 @@ class Order
         }
         
     }
-    
-    
         func display()
         {
             let n = 1...5
@@ -53,6 +52,5 @@ class Order
             print("Total : \(OrderTotal)")
             }
         }
-    
 }
 
