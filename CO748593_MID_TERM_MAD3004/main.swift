@@ -46,11 +46,14 @@ p5.Pname = "iPhone 7 Plus"
 p5.price = 1200.00
 p5.quantity = 45
 p5.display()
+//p5.total()
 
 var o1 = Order()
+o1.getOrderById()
 o1.display()
+
 var o2 = Order()
-o2.display()
+//o2.display()
 var o3 = Order()
-o3.display()
+//o3.display()
 

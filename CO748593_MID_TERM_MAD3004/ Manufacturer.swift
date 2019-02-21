@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Manufacturer
+class Manufacturer: IDisplay
 {
     var Mid : Int
     var Mname : String

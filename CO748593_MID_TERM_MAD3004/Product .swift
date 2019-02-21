@@ -20,8 +20,21 @@ class Product: Manufacturer
         self.Pid = String()
         self.Pname = String()
         self.price = 0.0
-        self.quantity = 0
+        self.quantity = 5
     }
+    
+   /* func total()
+    {
+        var n = 0
+        for _ in 1...quantity
+        {
+       if quantity != n
+        {
+            n = Int(Float(n) + price)
+        }
+        print("total Price : \(n)")
+    }
+    }*/
     
    override func display()
     {

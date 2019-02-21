@@ -12,36 +12,47 @@ class Order
 {
     var OrderId = Int()
     var OrderDate = Date()
-    var ProductArray = Array<Int>()
+    var ProductArray = Array<String>()
     var OrderTotal = Float()
     
      init()
     {
-       self.OrderId = 0
-       self.OrderDate = Date()
-        self.ProductArray = [0]
+        self.OrderId = 0
+        self.OrderDate = Date()
+        self.ProductArray = ["Hard Drive","Zip Drive","Floppy Disk","Monitor","iPhone 7 Plus"]
         self.OrderTotal = 0.0
     }
+    
     
     func getOrderById()
     {
         var order = Dictionary<String, String>()
-        order.updateValue("Hard Drive", forKey: "P001")
-        order.updateValue("Zip Drive", forKey: "P002")
-        order.updateValue("Floppy Disk", forKey: "P003")
-        order.updateValue("Monitor", forKey: "P004")
-        order.updateValue("iPhone 7 Plus", forKey: "P005")
-
-    for i in order
-    {
-    print(i)
+        order.updateValue("Hard Drive", forKey: "1")
+        order.updateValue("Zip Drive", forKey: "2")
+        order.updateValue("Floppy Disk", forKey: "3")
+        order.updateValue("Monitor", forKey: "4")
+        order.updateValue("iPhone 7 Plus", forKey: "5")
+    
+           for i in order
+        {
+              print(i.value)
+        }
+        
     }
-    }
-   /* func display()
-    {
-        print(OrderId)
-        print(OrderDate)
-        print(ProductArray)
-        print(OrderTotal)
-    }*/
+    
+    
+        func display()
+        {
+            let n = 1...5
+            for x in n
+            {
+            OrderId = x
+            print("Order Id :\(OrderId)")
+            print("Date : \(OrderDate)")
+            print("Product List : \(ProductArray)")
+            print("Total : \(OrderTotal)")
+            }
+        }
+    
 }
+
