@@ -10,16 +10,24 @@ import Foundation
 
 class Product: Manufacturer
 {
-    var Pid : Int
+    var Pid : String
     var Pname : String
     var price : Float
     var quantity : Int
     
    override init()
     {
-        self.Pid = 0
+        self.Pid = String()
         self.Pname = String()
         self.price = 0.0
         self.quantity = 0
+    }
+    
+   override func display()
+    {
+        print("Product Id : \(Pid)")
+        print("Product Name : \(Pname)")
+        print("Price : \(price)")
+        print("Quantity : \(quantity)")
     }
 }

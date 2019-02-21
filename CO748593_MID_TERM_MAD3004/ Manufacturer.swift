@@ -20,8 +20,9 @@ class Manufacturer
         self.Mname = String()
     }
     
-    func dislay()
+    func display()
     {
-        
+        print(Mid)
+        print(Mname)
     }
 }
